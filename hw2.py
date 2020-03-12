@@ -92,13 +92,8 @@ def eight_point_algorithm(corr,im):
 
     # The 1,2 solution
     U,S,Vh = np.linalg.svd(E)
-    # if(np.linalg.det(Vh)<0):
-    #     Vh = -Vh
-    # if (np.linalg.det(U) < 0):
-    #     U = -U
     sigma = (S[0]+S[1])/2
     ss = np.diag([1,1,0])
-    # print("The singular value:\n",S)
     Rz = RTP
     R1,T1 = findRT(U,ss,Vh,Rz)
     Rz = RTN

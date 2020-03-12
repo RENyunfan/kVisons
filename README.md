@@ -39,9 +39,9 @@ Process finished with exit code 0
 ## 8 Points
 
 The matrix K 
-$$
-K =  \left[\begin{matrix} f_x & 0 & c_x \\ 0 & f_y & c_y \\ 0 & 0 & 1 \end{matrix}\right]\\
-$$
+
+<img src="README.assets/image-20200311212631513.png" alt="image-20200311212631513" style="zoom:45%;" />
+
 From epipolar constrain
 
 ![](https://www.zhihu.com/equation?tex=\ p_2^T (K^{-1})^{T}\hat t RK^{-1}p_1 = 0)
