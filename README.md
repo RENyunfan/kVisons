@@ -44,7 +44,7 @@ The matrix K
 
 From epipolar constrain
 
-![](https://www.zhihu.com/equation?tex=\ p_2^T (K^{-1})^{T}\hat t RK^{-1}p_1 = 0)
+<img src="README.assets/image-20200312205708129.png" alt="image-20200312205708129" style="zoom:15%;" />
 
 So we first find the fundamental matrix by solving
 
