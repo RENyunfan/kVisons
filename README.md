@@ -38,3 +38,42 @@ Process finished with exit code 0
 
 See all in Jupiter notebook.
 
+
+
+# Collaboration
+
+The show function below is in collaboration with Anxing Xiao.
+
+```python
+def show_projection(img_arr, scene_id, corr, R, T):
+    x1 = corr[0]
+    x2 = corr[1]
+    x1 = x1 / 560
+    x2 = x2 / 560
+    x1[:, [0, 1]] = x1[:, [1, 0]]
+    x2[:, [0, 1]] = x2[:, [1, 0]]
+    X1 = np.append(x1[0], 1)
+    X2 = np.append(x2[0], 1)
+    l = x1.shape[0]
+    X_projection = np.zeros([l, 2])
+
+    for i in range(l):
+        X1 = np.append(x1[i], 1)
+        X2 = np.append(x2[i], 1)
+        lambda1 = np.linalg.norm(vec2hat(X2) @ T) / np.linalg.norm(vec2hat(X2) @ R @ X1)
+        lambda2 = np.linalg.norm((vec2hat(R @ X1) @ T)) / np.linalg.norm((vec2hat(R @ X1) @ X2))
+        #         print(lambda1,lambda2)
+        projection = (lambda1 * R.dot(X1).transpose() + T[:, 0])
+        projection_xy = projection[:2] / lambda2
+        X_projection[i,0] = projection_xy[0]
+        X_projection[i,1] = projection_xy[1]
+
+    im_i = scene_id  # image index 0-9 (please change this to see other scenes)
+    fig, ax = plt.subplots(ncols=1, nrows=1, figsize=(7, 5), dpi=200)
+    ax.imshow(img_arr[im_i, 1])
+    ax.scatter(x2[:, 0] * 560, x2[:, 1] * 560, c='r', s=5)
+    ax.scatter(X_projection[:, 0] * 560, X_projection[:, 1] * 560, c='b', s=5)
+    ax.set_title('projection image')
+    plt.show()
+```
+
