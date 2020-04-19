@@ -66,7 +66,7 @@ add_subdirectory(src)
 add_subdirectory(test)
 add_subdirectory(app)
 
-add_executable(lkflow test/LKfolow.cpp)
-target_link_libraries(lkflow
-        ${OpenCV_LIBS}
-)
+#add_executable(lkflow test/LKfolow.cpp)
+#target_link_libraries(lkflow
+#        ${OpenCV_LIBS}
+#)

@@ -4,17 +4,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/kevin/workSpace/slambook2-master/ch13/src/backend.cpp" "/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/src/CMakeFiles/myslam.dir/backend.cpp.o"
-  "/home/kevin/workSpace/slambook2-master/ch13/src/camera.cpp" "/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/src/CMakeFiles/myslam.dir/camera.cpp.o"
-  "/home/kevin/workSpace/slambook2-master/ch13/src/config.cpp" "/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/src/CMakeFiles/myslam.dir/config.cpp.o"
-  "/home/kevin/workSpace/slambook2-master/ch13/src/dataset.cpp" "/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/src/CMakeFiles/myslam.dir/dataset.cpp.o"
-  "/home/kevin/workSpace/slambook2-master/ch13/src/feature.cpp" "/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/src/CMakeFiles/myslam.dir/feature.cpp.o"
-  "/home/kevin/workSpace/slambook2-master/ch13/src/frame.cpp" "/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/src/CMakeFiles/myslam.dir/frame.cpp.o"
-  "/home/kevin/workSpace/slambook2-master/ch13/src/frontend.cpp" "/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/src/CMakeFiles/myslam.dir/frontend.cpp.o"
-  "/home/kevin/workSpace/slambook2-master/ch13/src/map.cpp" "/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/src/CMakeFiles/myslam.dir/map.cpp.o"
-  "/home/kevin/workSpace/slambook2-master/ch13/src/mappoint.cpp" "/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/src/CMakeFiles/myslam.dir/mappoint.cpp.o"
-  "/home/kevin/workSpace/slambook2-master/ch13/src/viewer.cpp" "/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/src/CMakeFiles/myslam.dir/viewer.cpp.o"
-  "/home/kevin/workSpace/slambook2-master/ch13/src/visual_odometry.cpp" "/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/src/CMakeFiles/myslam.dir/visual_odometry.cpp.o"
+  "/home/kevin/Documents/Github/kVisons/kslam/src/backend.cpp" "/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/src/CMakeFiles/myslam.dir/backend.cpp.o"
+  "/home/kevin/Documents/Github/kVisons/kslam/src/camera.cpp" "/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/src/CMakeFiles/myslam.dir/camera.cpp.o"
+  "/home/kevin/Documents/Github/kVisons/kslam/src/config.cpp" "/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/src/CMakeFiles/myslam.dir/config.cpp.o"
+  "/home/kevin/Documents/Github/kVisons/kslam/src/dataset.cpp" "/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/src/CMakeFiles/myslam.dir/dataset.cpp.o"
+  "/home/kevin/Documents/Github/kVisons/kslam/src/feature.cpp" "/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/src/CMakeFiles/myslam.dir/feature.cpp.o"
+  "/home/kevin/Documents/Github/kVisons/kslam/src/frame.cpp" "/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/src/CMakeFiles/myslam.dir/frame.cpp.o"
+  "/home/kevin/Documents/Github/kVisons/kslam/src/frontend.cpp" "/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/src/CMakeFiles/myslam.dir/frontend.cpp.o"
+  "/home/kevin/Documents/Github/kVisons/kslam/src/map.cpp" "/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/src/CMakeFiles/myslam.dir/map.cpp.o"
+  "/home/kevin/Documents/Github/kVisons/kslam/src/mappoint.cpp" "/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/src/CMakeFiles/myslam.dir/mappoint.cpp.o"
+  "/home/kevin/Documents/Github/kVisons/kslam/src/viewer.cpp" "/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/src/CMakeFiles/myslam.dir/viewer.cpp.o"
+  "/home/kevin/Documents/Github/kVisons/kslam/src/visual_odometry.cpp" "/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/src/CMakeFiles/myslam.dir/visual_odometry.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

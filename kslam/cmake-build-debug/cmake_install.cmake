@@ -1,4 +1,4 @@
-# Install script for directory: /home/kevin/workSpace/slambook2-master/ch13
+# Install script for directory: /home/kevin/Documents/Github/kVisons/kslam
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/src/cmake_install.cmake")
-  include("/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/test/cmake_install.cmake")
-  include("/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/app/cmake_install.cmake")
+  include("/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/src/cmake_install.cmake")
+  include("/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/test/cmake_install.cmake")
+  include("/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/app/cmake_install.cmake")
 
 endif()
 
@@ -53,5 +53,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

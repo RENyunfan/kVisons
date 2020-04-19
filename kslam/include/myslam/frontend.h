@@ -106,6 +106,12 @@ class Frontend {
     int TriangulateNewPoints();
 
     /**
+    * Triangulate the 2D points by Mono camera.
+    * @return num of triangulated points
+    */
+    int TriangulateNewPoints_Mono();
+
+    /**
      * Set the features in keyframe as new observation of the map points
      */
     void SetObservationsForKeyFrame();
@@ -117,6 +123,9 @@ class Frontend {
     Frame::Ptr last_frame_ = nullptr;     // 上一帧
     Camera::Ptr camera_left_ = nullptr;   // 左侧相机
     Camera::Ptr camera_right_ = nullptr;  // 右侧相机
+
+    Camera::Ptr camera_left_last_ = nullptr;   // 左侧相机
+    Camera::Ptr camera_right_last_ = nullptr;  // 右侧相机
 
     Map::Ptr map_ = nullptr;
     std::shared_ptr<Backend> backend_ = nullptr;
@@ -130,7 +139,7 @@ class Frontend {
     int num_features_ = 200;
     int num_features_init_ = 100;
     int num_features_tracking_ = 50;
-    int num_features_tracking_bad_ = 20;
+    int num_features_tracking_bad_ = 10;
     int num_features_needed_for_keyframe_ = 80;
 
     // utilities

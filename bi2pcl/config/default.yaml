@@ -12,5 +12,5 @@ camera.d: 1
 image.zoom: 0.8
 
 # Topic to read
-topic_name.left: /camera/left/image_raw
-topic_name.right: /camera/right/image_raw
+topic_name.left: /cam0/image_raw
+topic_name.right: /cam1/image_raw

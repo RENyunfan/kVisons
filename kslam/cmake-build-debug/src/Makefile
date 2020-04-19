@@ -48,10 +48,10 @@ RM = /home/kevin/Apps/Clion/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kevin/workSpace/slambook2-master/ch13
+CMAKE_SOURCE_DIR = /home/kevin/Documents/Github/kVisons/kslam
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug
+CMAKE_BINARY_DIR = /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -91,14 +91,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/CMakeFiles /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/src/CMakeFiles/progress.marks
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/CMakeFiles 0
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/CMakeFiles /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/src/CMakeFiles/progress.marks
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -108,22 +108,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/myslam.dir/rule:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/myslam.dir/rule
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/myslam.dir/rule
 .PHONY : src/CMakeFiles/myslam.dir/rule
 
 # Convenience name for target.
@@ -133,7 +133,7 @@ myslam: src/CMakeFiles/myslam.dir/rule
 
 # fast build rule for target.
 myslam/fast:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/build
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/build
 .PHONY : myslam/fast
 
 backend.o: backend.cpp.o
@@ -142,7 +142,7 @@ backend.o: backend.cpp.o
 
 # target to build an object file
 backend.cpp.o:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/backend.cpp.o
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/backend.cpp.o
 .PHONY : backend.cpp.o
 
 backend.i: backend.cpp.i
@@ -151,7 +151,7 @@ backend.i: backend.cpp.i
 
 # target to preprocess a source file
 backend.cpp.i:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/backend.cpp.i
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/backend.cpp.i
 .PHONY : backend.cpp.i
 
 backend.s: backend.cpp.s
@@ -160,7 +160,7 @@ backend.s: backend.cpp.s
 
 # target to generate assembly for a file
 backend.cpp.s:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/backend.cpp.s
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/backend.cpp.s
 .PHONY : backend.cpp.s
 
 camera.o: camera.cpp.o
@@ -169,7 +169,7 @@ camera.o: camera.cpp.o
 
 # target to build an object file
 camera.cpp.o:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/camera.cpp.o
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/camera.cpp.o
 .PHONY : camera.cpp.o
 
 camera.i: camera.cpp.i
@@ -178,7 +178,7 @@ camera.i: camera.cpp.i
 
 # target to preprocess a source file
 camera.cpp.i:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/camera.cpp.i
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/camera.cpp.i
 .PHONY : camera.cpp.i
 
 camera.s: camera.cpp.s
@@ -187,7 +187,7 @@ camera.s: camera.cpp.s
 
 # target to generate assembly for a file
 camera.cpp.s:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/camera.cpp.s
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/camera.cpp.s
 .PHONY : camera.cpp.s
 
 config.o: config.cpp.o
@@ -196,7 +196,7 @@ config.o: config.cpp.o
 
 # target to build an object file
 config.cpp.o:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/config.cpp.o
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/config.cpp.o
 .PHONY : config.cpp.o
 
 config.i: config.cpp.i
@@ -205,7 +205,7 @@ config.i: config.cpp.i
 
 # target to preprocess a source file
 config.cpp.i:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/config.cpp.i
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/config.cpp.i
 .PHONY : config.cpp.i
 
 config.s: config.cpp.s
@@ -214,7 +214,7 @@ config.s: config.cpp.s
 
 # target to generate assembly for a file
 config.cpp.s:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/config.cpp.s
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/config.cpp.s
 .PHONY : config.cpp.s
 
 dataset.o: dataset.cpp.o
@@ -223,7 +223,7 @@ dataset.o: dataset.cpp.o
 
 # target to build an object file
 dataset.cpp.o:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/dataset.cpp.o
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/dataset.cpp.o
 .PHONY : dataset.cpp.o
 
 dataset.i: dataset.cpp.i
@@ -232,7 +232,7 @@ dataset.i: dataset.cpp.i
 
 # target to preprocess a source file
 dataset.cpp.i:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/dataset.cpp.i
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/dataset.cpp.i
 .PHONY : dataset.cpp.i
 
 dataset.s: dataset.cpp.s
@@ -241,7 +241,7 @@ dataset.s: dataset.cpp.s
 
 # target to generate assembly for a file
 dataset.cpp.s:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/dataset.cpp.s
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/dataset.cpp.s
 .PHONY : dataset.cpp.s
 
 feature.o: feature.cpp.o
@@ -250,7 +250,7 @@ feature.o: feature.cpp.o
 
 # target to build an object file
 feature.cpp.o:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/feature.cpp.o
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/feature.cpp.o
 .PHONY : feature.cpp.o
 
 feature.i: feature.cpp.i
@@ -259,7 +259,7 @@ feature.i: feature.cpp.i
 
 # target to preprocess a source file
 feature.cpp.i:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/feature.cpp.i
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/feature.cpp.i
 .PHONY : feature.cpp.i
 
 feature.s: feature.cpp.s
@@ -268,7 +268,7 @@ feature.s: feature.cpp.s
 
 # target to generate assembly for a file
 feature.cpp.s:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/feature.cpp.s
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/feature.cpp.s
 .PHONY : feature.cpp.s
 
 frame.o: frame.cpp.o
@@ -277,7 +277,7 @@ frame.o: frame.cpp.o
 
 # target to build an object file
 frame.cpp.o:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/frame.cpp.o
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/frame.cpp.o
 .PHONY : frame.cpp.o
 
 frame.i: frame.cpp.i
@@ -286,7 +286,7 @@ frame.i: frame.cpp.i
 
 # target to preprocess a source file
 frame.cpp.i:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/frame.cpp.i
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/frame.cpp.i
 .PHONY : frame.cpp.i
 
 frame.s: frame.cpp.s
@@ -295,7 +295,7 @@ frame.s: frame.cpp.s
 
 # target to generate assembly for a file
 frame.cpp.s:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/frame.cpp.s
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/frame.cpp.s
 .PHONY : frame.cpp.s
 
 frontend.o: frontend.cpp.o
@@ -304,7 +304,7 @@ frontend.o: frontend.cpp.o
 
 # target to build an object file
 frontend.cpp.o:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/frontend.cpp.o
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/frontend.cpp.o
 .PHONY : frontend.cpp.o
 
 frontend.i: frontend.cpp.i
@@ -313,7 +313,7 @@ frontend.i: frontend.cpp.i
 
 # target to preprocess a source file
 frontend.cpp.i:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/frontend.cpp.i
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/frontend.cpp.i
 .PHONY : frontend.cpp.i
 
 frontend.s: frontend.cpp.s
@@ -322,7 +322,7 @@ frontend.s: frontend.cpp.s
 
 # target to generate assembly for a file
 frontend.cpp.s:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/frontend.cpp.s
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/frontend.cpp.s
 .PHONY : frontend.cpp.s
 
 map.o: map.cpp.o
@@ -331,7 +331,7 @@ map.o: map.cpp.o
 
 # target to build an object file
 map.cpp.o:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/map.cpp.o
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/map.cpp.o
 .PHONY : map.cpp.o
 
 map.i: map.cpp.i
@@ -340,7 +340,7 @@ map.i: map.cpp.i
 
 # target to preprocess a source file
 map.cpp.i:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/map.cpp.i
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/map.cpp.i
 .PHONY : map.cpp.i
 
 map.s: map.cpp.s
@@ -349,7 +349,7 @@ map.s: map.cpp.s
 
 # target to generate assembly for a file
 map.cpp.s:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/map.cpp.s
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/map.cpp.s
 .PHONY : map.cpp.s
 
 mappoint.o: mappoint.cpp.o
@@ -358,7 +358,7 @@ mappoint.o: mappoint.cpp.o
 
 # target to build an object file
 mappoint.cpp.o:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/mappoint.cpp.o
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/mappoint.cpp.o
 .PHONY : mappoint.cpp.o
 
 mappoint.i: mappoint.cpp.i
@@ -367,7 +367,7 @@ mappoint.i: mappoint.cpp.i
 
 # target to preprocess a source file
 mappoint.cpp.i:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/mappoint.cpp.i
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/mappoint.cpp.i
 .PHONY : mappoint.cpp.i
 
 mappoint.s: mappoint.cpp.s
@@ -376,7 +376,7 @@ mappoint.s: mappoint.cpp.s
 
 # target to generate assembly for a file
 mappoint.cpp.s:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/mappoint.cpp.s
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/mappoint.cpp.s
 .PHONY : mappoint.cpp.s
 
 viewer.o: viewer.cpp.o
@@ -385,7 +385,7 @@ viewer.o: viewer.cpp.o
 
 # target to build an object file
 viewer.cpp.o:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/viewer.cpp.o
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/viewer.cpp.o
 .PHONY : viewer.cpp.o
 
 viewer.i: viewer.cpp.i
@@ -394,7 +394,7 @@ viewer.i: viewer.cpp.i
 
 # target to preprocess a source file
 viewer.cpp.i:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/viewer.cpp.i
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/viewer.cpp.i
 .PHONY : viewer.cpp.i
 
 viewer.s: viewer.cpp.s
@@ -403,7 +403,7 @@ viewer.s: viewer.cpp.s
 
 # target to generate assembly for a file
 viewer.cpp.s:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/viewer.cpp.s
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/viewer.cpp.s
 .PHONY : viewer.cpp.s
 
 visual_odometry.o: visual_odometry.cpp.o
@@ -412,7 +412,7 @@ visual_odometry.o: visual_odometry.cpp.o
 
 # target to build an object file
 visual_odometry.cpp.o:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/visual_odometry.cpp.o
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/visual_odometry.cpp.o
 .PHONY : visual_odometry.cpp.o
 
 visual_odometry.i: visual_odometry.cpp.i
@@ -421,7 +421,7 @@ visual_odometry.i: visual_odometry.cpp.i
 
 # target to preprocess a source file
 visual_odometry.cpp.i:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/visual_odometry.cpp.i
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/visual_odometry.cpp.i
 .PHONY : visual_odometry.cpp.i
 
 visual_odometry.s: visual_odometry.cpp.s
@@ -430,7 +430,7 @@ visual_odometry.s: visual_odometry.cpp.s
 
 # target to generate assembly for a file
 visual_odometry.cpp.s:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/visual_odometry.cpp.s
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/visual_odometry.cpp.s
 .PHONY : visual_odometry.cpp.s
 
 # Help Target
@@ -487,6 +487,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

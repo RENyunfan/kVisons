@@ -42,6 +42,20 @@ catkin_make
 source devel/setup.bash
 ```
 
+# Test
+
+## Original
+
+![image-20200508103641322](README.assets/image-20200508103641322.png)
+
+## Depth 
+
+![image-20200508103707921](README.assets/image-20200508103707921.png)
+
+## Show in Pangolin
+
+![image-20200508104215146](README.assets/image-20200508104215146.png)
+
 # How to use
 
 Fist of all, you should set you camera intrinsics and extrinsic in the  `config/default.yaml`,  and you should also set the topic name of left and right eyes.

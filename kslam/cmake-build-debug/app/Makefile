@@ -48,10 +48,10 @@ RM = /home/kevin/Apps/Clion/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kevin/workSpace/slambook2-master/ch13
+CMAKE_SOURCE_DIR = /home/kevin/Documents/Github/kVisons/kslam
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug
+CMAKE_BINARY_DIR = /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -91,14 +91,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/CMakeFiles /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/app/CMakeFiles/progress.marks
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 app/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/CMakeFiles 0
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/CMakeFiles /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/app/CMakeFiles/progress.marks
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 app/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 app/clean
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 app/clean
 .PHONY : clean
 
 # The main clean target
@@ -108,22 +108,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 app/preinstall
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 app/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 app/preinstall
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 app/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 app/CMakeFiles/run_kitti_stereo.dir/rule:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/run_kitti_stereo.dir/rule
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/run_kitti_stereo.dir/rule
 .PHONY : app/CMakeFiles/run_kitti_stereo.dir/rule
 
 # Convenience name for target.
@@ -133,7 +133,7 @@ run_kitti_stereo: app/CMakeFiles/run_kitti_stereo.dir/rule
 
 # fast build rule for target.
 run_kitti_stereo/fast:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f app/CMakeFiles/run_kitti_stereo.dir/build.make app/CMakeFiles/run_kitti_stereo.dir/build
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f app/CMakeFiles/run_kitti_stereo.dir/build.make app/CMakeFiles/run_kitti_stereo.dir/build
 .PHONY : run_kitti_stereo/fast
 
 run_kitti_stereo.o: run_kitti_stereo.cpp.o
@@ -142,7 +142,7 @@ run_kitti_stereo.o: run_kitti_stereo.cpp.o
 
 # target to build an object file
 run_kitti_stereo.cpp.o:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f app/CMakeFiles/run_kitti_stereo.dir/build.make app/CMakeFiles/run_kitti_stereo.dir/run_kitti_stereo.cpp.o
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f app/CMakeFiles/run_kitti_stereo.dir/build.make app/CMakeFiles/run_kitti_stereo.dir/run_kitti_stereo.cpp.o
 .PHONY : run_kitti_stereo.cpp.o
 
 run_kitti_stereo.i: run_kitti_stereo.cpp.i
@@ -151,7 +151,7 @@ run_kitti_stereo.i: run_kitti_stereo.cpp.i
 
 # target to preprocess a source file
 run_kitti_stereo.cpp.i:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f app/CMakeFiles/run_kitti_stereo.dir/build.make app/CMakeFiles/run_kitti_stereo.dir/run_kitti_stereo.cpp.i
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f app/CMakeFiles/run_kitti_stereo.dir/build.make app/CMakeFiles/run_kitti_stereo.dir/run_kitti_stereo.cpp.i
 .PHONY : run_kitti_stereo.cpp.i
 
 run_kitti_stereo.s: run_kitti_stereo.cpp.s
@@ -160,7 +160,7 @@ run_kitti_stereo.s: run_kitti_stereo.cpp.s
 
 # target to generate assembly for a file
 run_kitti_stereo.cpp.s:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(MAKE) -f app/CMakeFiles/run_kitti_stereo.dir/build.make app/CMakeFiles/run_kitti_stereo.dir/run_kitti_stereo.cpp.s
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(MAKE) -f app/CMakeFiles/run_kitti_stereo.dir/build.make app/CMakeFiles/run_kitti_stereo.dir/run_kitti_stereo.cpp.s
 .PHONY : run_kitti_stereo.cpp.s
 
 # Help Target
@@ -187,6 +187,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

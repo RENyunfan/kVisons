@@ -1,4 +1,4 @@
-/home/kevin/Apps/Clion/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/kevin/workSpace/slambook2-master/ch13
+/home/kevin/Apps/Clion/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/kevin/Documents/Github/kVisons/kslam
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug
+-- Build files have been written to: /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug

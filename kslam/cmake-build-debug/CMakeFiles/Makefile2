@@ -44,16 +44,15 @@ RM = /home/kevin/Apps/Clion/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kevin/workSpace/slambook2-master/ch13
+CMAKE_SOURCE_DIR = /home/kevin/Documents/Github/kVisons/kslam
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug
+CMAKE_BINARY_DIR = /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/lkflow.dir/all
 all: src/all
 all: test/all
 all: app/all
@@ -68,7 +67,6 @@ preinstall: app/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/lkflow.dir/clean
 clean: src/clean
 clean: test/clean
 clean: app/clean
@@ -130,47 +128,20 @@ test/clean: test/CMakeFiles/test_triangulation.dir/clean
 .PHONY : test/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/lkflow.dir
-
-# All Build rule for target.
-CMakeFiles/lkflow.dir/all:
-	$(MAKE) -f CMakeFiles/lkflow.dir/build.make CMakeFiles/lkflow.dir/depend
-	$(MAKE) -f CMakeFiles/lkflow.dir/build.make CMakeFiles/lkflow.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target lkflow"
-.PHONY : CMakeFiles/lkflow.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/lkflow.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lkflow.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/lkflow.dir/rule
-
-# Convenience name for target.
-lkflow: CMakeFiles/lkflow.dir/rule
-
-.PHONY : lkflow
-
-# clean rule for target.
-CMakeFiles/lkflow.dir/clean:
-	$(MAKE) -f CMakeFiles/lkflow.dir/build.make CMakeFiles/lkflow.dir/clean
-.PHONY : CMakeFiles/lkflow.dir/clean
-
-#=============================================================================
 # Target rules for target src/CMakeFiles/myslam.dir
 
 # All Build rule for target.
 src/CMakeFiles/myslam.dir/all:
 	$(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/depend
 	$(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14 "Built target myslam"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target myslam"
 .PHONY : src/CMakeFiles/myslam.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/myslam.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/myslam.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/CMakeFiles 0
 .PHONY : src/CMakeFiles/myslam.dir/rule
 
 # Convenience name for target.
@@ -190,14 +161,14 @@ src/CMakeFiles/myslam.dir/clean:
 test/CMakeFiles/test_triangulation.dir/all: src/CMakeFiles/myslam.dir/all
 	$(MAKE) -f test/CMakeFiles/test_triangulation.dir/build.make test/CMakeFiles/test_triangulation.dir/depend
 	$(MAKE) -f test/CMakeFiles/test_triangulation.dir/build.make test/CMakeFiles/test_triangulation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target test_triangulation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target test_triangulation"
 .PHONY : test/CMakeFiles/test_triangulation.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test_triangulation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_triangulation.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/CMakeFiles 0
 .PHONY : test/CMakeFiles/test_triangulation.dir/rule
 
 # Convenience name for target.
@@ -217,14 +188,14 @@ test/CMakeFiles/test_triangulation.dir/clean:
 app/CMakeFiles/run_kitti_stereo.dir/all: src/CMakeFiles/myslam.dir/all
 	$(MAKE) -f app/CMakeFiles/run_kitti_stereo.dir/build.make app/CMakeFiles/run_kitti_stereo.dir/depend
 	$(MAKE) -f app/CMakeFiles/run_kitti_stereo.dir/build.make app/CMakeFiles/run_kitti_stereo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target run_kitti_stereo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target run_kitti_stereo"
 .PHONY : app/CMakeFiles/run_kitti_stereo.dir/all
 
 # Build rule for subdir invocation for target.
 app/CMakeFiles/run_kitti_stereo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/run_kitti_stereo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/CMakeFiles 0
 .PHONY : app/CMakeFiles/run_kitti_stereo.dir/rule
 
 # Convenience name for target.

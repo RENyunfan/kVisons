@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: libopencv
+Version: 0.0.1
+Summary: libopencv
+Home-page: https://pypi.org/project/libopencv/
+Author: anycode
+Author-email: anycode@yahoo.com
+Maintainer: anycode
+Maintainer-email: anycode@yahoo.com
+License: GNU Affero General Public License v3
+Platform: all
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+
+# tr
+
+

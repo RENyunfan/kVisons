@@ -31,14 +31,15 @@ bool Frontend::AddFrame(myslam::Frame::Ptr frame) {
             break;
         case FrontendStatus::TRACKING_GOOD:
         case FrontendStatus::TRACKING_BAD:
-//            LOG(INFO)<<"TRACK";
+            LOG(INFO)<<"TRACK";
             Track();
             break;
         case FrontendStatus::LOST:
             Reset();
             break;
     }
-
+    camera_right_last_ = camera_right_;
+    camera_left_last_ = camera_left_;
     last_frame_ = current_frame_;
     return true;
 }
@@ -61,6 +62,7 @@ bool Frontend::Track() {
     } else {
         // lost
         status_ = FrontendStatus::LOST;
+        LOG(INFO)<<"=======================================================+GG";
     }
 
     InsertKeyframe();
@@ -104,10 +106,55 @@ void Frontend::SetObservationsForKeyFrame() {
     }
 }
 
-int Frontend::TriangulateNewPoints() {
-    std::vector<SE3> poses{camera_left_->pose(), camera_right_->pose()};
+int Frontend::TriangulateNewPoints_Mono(){
+    // Ger current left-right camera pose
+    std::vector<SE3> poses{camera_left_->pose(), camera_left_last_->pose()};
+    // Twc is the inverse of current frame
     SE3 current_pose_Twc = current_frame_->Pose().inverse();
     int cnt_triangulated_pts = 0;
+    LOG(INFO)<<"OK";
+
+    for (size_t i = 0; i < std::min(current_frame_->features_left_.size() , last_frame_->features_left_.size()); ++i) {
+        if (current_frame_->features_left_[i]->map_point_.expired() &&
+            last_frame_->features_left_[i] != nullptr) {
+            // 左图前后时刻的关联点，尝试三角化
+            std::vector<Vec3> points{
+                    camera_left_->pixel2camera(
+                            Vec2(current_frame_->features_left_[i]->position_.pt.x,
+                                 current_frame_->features_left_[i]->position_.pt.y)),
+                    camera_left_last_->pixel2camera(
+                            Vec2(last_frame_->features_left_[i]->position_.pt.x,
+                                 last_frame_->features_left_[i]->position_.pt.y))};
+            Vec3 pworld = Vec3::Zero();
+
+            if (triangulation(poses, points, pworld) && pworld[2] > 0) {
+                auto new_map_point = MapPoint::CreateNewMappoint();
+                pworld = current_pose_Twc * pworld;
+                new_map_point->SetPos(pworld);
+                new_map_point->AddObservation(
+                        current_frame_->features_left_[i]);
+                new_map_point->AddObservation(
+                        last_frame_->features_left_[i]);
+
+                current_frame_->features_left_[i]->map_point_ = new_map_point;
+                last_frame_->features_left_[i]->map_point_ = new_map_point;
+                map_->InsertMapPoint(new_map_point);
+                cnt_triangulated_pts++;
+            }
+        }
+    }
+    LOG(INFO) << "new landmarks: " << cnt_triangulated_pts;
+    return cnt_triangulated_pts;
+}
+
+
+int Frontend::TriangulateNewPoints() {
+    // Ger current left-right camera pose
+    std::vector<SE3> poses{camera_left_->pose(), camera_right_->pose()};
+    // Twc is the inverse of current frame
+    SE3 current_pose_Twc = current_frame_->Pose().inverse();
+    int cnt_triangulated_pts = 0;
+
     for (size_t i = 0; i < current_frame_->features_left_.size(); ++i) {
         if (current_frame_->features_left_[i]->map_point_.expired() &&
             current_frame_->features_right_[i] != nullptr) {
@@ -143,14 +190,14 @@ int Frontend::TriangulateNewPoints() {
 
 int Frontend::EstimateCurrentPose() {
     // setup g2o
-    typedef g2o::BlockSolver_6_3 BlockSolverType;
+    typedef g2o::BlockSolver_6_3 BlockSolverType;       // Pose is of 6 DOF and landmark is of 3 DOF
     typedef g2o::LinearSolverDense<BlockSolverType::PoseMatrixType>
-        LinearSolverType;
+        LinearSolverType;                               // Set type of Linear solver.
     auto solver = new g2o::OptimizationAlgorithmLevenberg(
         g2o::make_unique<BlockSolverType>(
-            g2o::make_unique<LinearSolverType>()));
-    g2o::SparseOptimizer optimizer;
-    optimizer.setAlgorithm(solver);
+            g2o::make_unique<LinearSolverType>()));  // Gradient descent method LM
+    g2o::SparseOptimizer optimizer;                     // Graph module
+    optimizer.setAlgorithm(solver);                     // Set solver
 
     // vertex
     VertexPose *vertex_pose = new VertexPose();  // camera vertex_pose
@@ -291,6 +338,7 @@ bool Frontend::StereoInit() {
 }
 
 int Frontend::DetectFeatures() {
+    // Detect in the left eye while tracking bad, used in keyfraem
     cv::Mat mask(current_frame_->left_img_.size(), CV_8UC1, 255);
     for (auto &feat : current_frame_->features_left_) {
         cv::rectangle(mask, feat->position_.pt - cv::Point2f(10, 10),

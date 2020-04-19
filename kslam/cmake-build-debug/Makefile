@@ -48,10 +48,10 @@ RM = /home/kevin/Apps/Clion/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kevin/workSpace/slambook2-master/ch13
+CMAKE_SOURCE_DIR = /home/kevin/Documents/Github/kVisons/kslam
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug
+CMAKE_BINARY_DIR = /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -91,9 +91,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/CMakeFiles /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/CMakeFiles /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -120,19 +120,6 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named lkflow
-
-# Build rule for target.
-lkflow: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lkflow
-.PHONY : lkflow
-
-# fast build rule for target.
-lkflow/fast:
-	$(MAKE) -f CMakeFiles/lkflow.dir/build.make CMakeFiles/lkflow.dir/build
-.PHONY : lkflow/fast
 
 #=============================================================================
 # Target rules for targets named myslam
@@ -173,33 +160,6 @@ run_kitti_stereo/fast:
 	$(MAKE) -f app/CMakeFiles/run_kitti_stereo.dir/build.make app/CMakeFiles/run_kitti_stereo.dir/build
 .PHONY : run_kitti_stereo/fast
 
-test/LKfolow.o: test/LKfolow.cpp.o
-
-.PHONY : test/LKfolow.o
-
-# target to build an object file
-test/LKfolow.cpp.o:
-	$(MAKE) -f CMakeFiles/lkflow.dir/build.make CMakeFiles/lkflow.dir/test/LKfolow.cpp.o
-.PHONY : test/LKfolow.cpp.o
-
-test/LKfolow.i: test/LKfolow.cpp.i
-
-.PHONY : test/LKfolow.i
-
-# target to preprocess a source file
-test/LKfolow.cpp.i:
-	$(MAKE) -f CMakeFiles/lkflow.dir/build.make CMakeFiles/lkflow.dir/test/LKfolow.cpp.i
-.PHONY : test/LKfolow.cpp.i
-
-test/LKfolow.s: test/LKfolow.cpp.s
-
-.PHONY : test/LKfolow.s
-
-# target to generate assembly for a file
-test/LKfolow.cpp.s:
-	$(MAKE) -f CMakeFiles/lkflow.dir/build.make CMakeFiles/lkflow.dir/test/LKfolow.cpp.s
-.PHONY : test/LKfolow.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -209,13 +169,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... lkflow"
 	@echo "... myslam"
 	@echo "... test_triangulation"
 	@echo "... run_kitti_stereo"
-	@echo "... test/LKfolow.o"
-	@echo "... test/LKfolow.i"
-	@echo "... test/LKfolow.s"
 .PHONY : help
 
 

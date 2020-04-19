@@ -1,4 +1,4 @@
-# Install script for directory: /home/kevin/workSpace/slambook2-master/ch13/app
+# Install script for directory: /home/kevin/Documents/Github/kVisons/kslam/app
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

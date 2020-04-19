@@ -5,114 +5,58 @@
 		<Option title="myslam"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\opt\ros\;CMake Files\..\..\..\..\..\opt\ros\kinetic\;CMake Files\..\..\..\..\..\opt\ros\kinetic\share\;CMake Files\..\..\..\..\..\opt\ros\kinetic\share\OpenCV-3.3.1-dev\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\Pangolin\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\gflags\;CMake Files\..\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\..\usr\local\share\sophus\;CMake Files\..\..\..\..\..\usr\local\share\sophus\cmake\;CMake Files\cmake_modules\;CMake Files\src\;CMake Files\test\;CMake Files\app\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\..\opt\ros\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\OpenCV-3.3.1-dev\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Pangolin\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\gflags\;CMake Files\..\..\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\..\..\usr\local\share\sophus\;CMake Files\..\..\..\..\..\..\usr\local\share\sophus\cmake\;CMake Files\cmake_modules\;CMake Files\src\;CMake Files\test\;CMake Files\app\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug"/>
+				<Option working_dir="/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug"/>
+				<Option working_dir="/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug"/>
+				<Option working_dir="/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test">
-				<Option working_dir="/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug"/>
+				<Option working_dir="/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="lkflow">
-				<Option output="/home/kevin/workSpace/slambook2-master/ch13/bin/lkflow" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/kevin/workSpace/slambook2-master/ch13/bin"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/include/suitesparse"/>
-					<Add directory="/home/kevin/workSpace/slambook2-master/ch13/include"/>
-					<Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev"/>
-					<Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/Makefile&quot;  VERBOSE=1 lkflow"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="lkflow/fast">
-				<Option output="/home/kevin/workSpace/slambook2-master/ch13/bin/lkflow" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/kevin/workSpace/slambook2-master/ch13/bin"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/include/suitesparse"/>
-					<Add directory="/home/kevin/workSpace/slambook2-master/ch13/include"/>
-					<Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev"/>
-					<Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/Makefile&quot;  VERBOSE=1 lkflow/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="myslam">
-				<Option output="/home/kevin/workSpace/slambook2-master/ch13/lib/libmyslam.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/src"/>
+				<Option output="/home/kevin/Documents/Github/kVisons/kslam/lib/libmyslam.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/src"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGFLAGS_IS_A_DLL=0"/>
 					<Add directory="/usr/include/suitesparse"/>
-					<Add directory="/home/kevin/workSpace/slambook2-master/ch13/include"/>
+					<Add directory="/home/kevin/Documents/Github/kVisons/kslam/include"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev"/>
 					<Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv"/>
@@ -126,22 +70,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 myslam"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 myslam"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="myslam/fast">
-				<Option output="/home/kevin/workSpace/slambook2-master/ch13/lib/libmyslam.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/src"/>
+				<Option output="/home/kevin/Documents/Github/kVisons/kslam/lib/libmyslam.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/src"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGFLAGS_IS_A_DLL=0"/>
 					<Add directory="/usr/include/suitesparse"/>
-					<Add directory="/home/kevin/workSpace/slambook2-master/ch13/include"/>
+					<Add directory="/home/kevin/Documents/Github/kVisons/kslam/include"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev"/>
 					<Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv"/>
@@ -155,22 +99,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 myslam/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 myslam/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test_triangulation">
-				<Option output="/home/kevin/workSpace/slambook2-master/ch13/bin/test_triangulation" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/kevin/workSpace/slambook2-master/ch13/bin"/>
+				<Option output="/home/kevin/Documents/Github/kVisons/kslam/bin/test_triangulation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kevin/Documents/Github/kVisons/kslam/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGFLAGS_IS_A_DLL=0"/>
 					<Add directory="/usr/include/suitesparse"/>
-					<Add directory="/home/kevin/workSpace/slambook2-master/ch13/include"/>
+					<Add directory="/home/kevin/Documents/Github/kVisons/kslam/include"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev"/>
 					<Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv"/>
@@ -184,22 +128,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_triangulation"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_triangulation"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test_triangulation/fast">
-				<Option output="/home/kevin/workSpace/slambook2-master/ch13/bin/test_triangulation" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/kevin/workSpace/slambook2-master/ch13/bin"/>
+				<Option output="/home/kevin/Documents/Github/kVisons/kslam/bin/test_triangulation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kevin/Documents/Github/kVisons/kslam/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGFLAGS_IS_A_DLL=0"/>
 					<Add directory="/usr/include/suitesparse"/>
-					<Add directory="/home/kevin/workSpace/slambook2-master/ch13/include"/>
+					<Add directory="/home/kevin/Documents/Github/kVisons/kslam/include"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev"/>
 					<Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv"/>
@@ -213,22 +157,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_triangulation/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_triangulation/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="run_kitti_stereo">
-				<Option output="/home/kevin/workSpace/slambook2-master/ch13/bin/run_kitti_stereo" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/kevin/workSpace/slambook2-master/ch13/bin"/>
+				<Option output="/home/kevin/Documents/Github/kVisons/kslam/bin/run_kitti_stereo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kevin/Documents/Github/kVisons/kslam/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGFLAGS_IS_A_DLL=0"/>
 					<Add directory="/usr/include/suitesparse"/>
-					<Add directory="/home/kevin/workSpace/slambook2-master/ch13/include"/>
+					<Add directory="/home/kevin/Documents/Github/kVisons/kslam/include"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev"/>
 					<Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv"/>
@@ -242,22 +186,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 run_kitti_stereo"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 run_kitti_stereo"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="run_kitti_stereo/fast">
-				<Option output="/home/kevin/workSpace/slambook2-master/ch13/bin/run_kitti_stereo" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/kevin/workSpace/slambook2-master/ch13/bin"/>
+				<Option output="/home/kevin/Documents/Github/kVisons/kslam/bin/run_kitti_stereo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kevin/Documents/Github/kVisons/kslam/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGFLAGS_IS_A_DLL=0"/>
 					<Add directory="/usr/include/suitesparse"/>
-					<Add directory="/home/kevin/workSpace/slambook2-master/ch13/include"/>
+					<Add directory="/home/kevin/Documents/Github/kVisons/kslam/include"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev"/>
 					<Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv"/>
@@ -271,119 +215,116 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 run_kitti_stereo/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kevin/workSpace/slambook2-master/ch13/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 run_kitti_stereo/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kevin/Documents/Github/kVisons/kslam/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/app/run_kitti_stereo.cpp">
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/app/run_kitti_stereo.cpp">
 			<Option target="run_kitti_stereo"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/src/backend.cpp">
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/src/backend.cpp">
 			<Option target="myslam"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/src/camera.cpp">
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/src/camera.cpp">
 			<Option target="myslam"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/src/config.cpp">
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/src/config.cpp">
 			<Option target="myslam"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/src/dataset.cpp">
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/src/dataset.cpp">
 			<Option target="myslam"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/src/feature.cpp">
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/src/feature.cpp">
 			<Option target="myslam"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/src/frame.cpp">
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/src/frame.cpp">
 			<Option target="myslam"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/src/frontend.cpp">
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/src/frontend.cpp">
 			<Option target="myslam"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/src/map.cpp">
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/src/map.cpp">
 			<Option target="myslam"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/src/mappoint.cpp">
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/src/mappoint.cpp">
 			<Option target="myslam"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/src/viewer.cpp">
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/src/viewer.cpp">
 			<Option target="myslam"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/src/visual_odometry.cpp">
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/src/visual_odometry.cpp">
 			<Option target="myslam"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/test/LKfolow.cpp">
-			<Option target="lkflow"/>
-		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/test/test_triangulation.cpp">
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/test/test_triangulation.cpp">
 			<Option target="test_triangulation"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/CMakeLists.txt">
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/../../../../../opt/ros/kinetic/share/OpenCV-3.3.1-dev/OpenCVConfig-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ros\kinetic\share\OpenCV-3.3.1-dev\"/>
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/../../../../../../opt/ros/kinetic/share/OpenCV-3.3.1-dev/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\OpenCV-3.3.1-dev\"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/../../../../../opt/ros/kinetic/share/OpenCV-3.3.1-dev/OpenCVConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ros\kinetic\share\OpenCV-3.3.1-dev\"/>
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/../../../../../../opt/ros/kinetic/share/OpenCV-3.3.1-dev/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\OpenCV-3.3.1-dev\"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/../../../../../opt/ros/kinetic/share/OpenCV-3.3.1-dev/OpenCVModules-release.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ros\kinetic\share\OpenCV-3.3.1-dev\"/>
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/../../../../../../opt/ros/kinetic/share/OpenCV-3.3.1-dev/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\OpenCV-3.3.1-dev\"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/../../../../../opt/ros/kinetic/share/OpenCV-3.3.1-dev/OpenCVModules.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ros\kinetic\share\OpenCV-3.3.1-dev\"/>
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/../../../../../../opt/ros/kinetic/share/OpenCV-3.3.1-dev/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\OpenCV-3.3.1-dev\"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/../../../../../usr/local/lib/cmake/Pangolin/PangolinConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\Pangolin\"/>
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/../../../../../../usr/local/lib/cmake/Pangolin/PangolinConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Pangolin\"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/../../../../../usr/local/lib/cmake/Pangolin/PangolinConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\Pangolin\"/>
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/../../../../../../usr/local/lib/cmake/Pangolin/PangolinConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Pangolin\"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/../../../../../usr/local/lib/cmake/Pangolin/PangolinTargets-release.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\Pangolin\"/>
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/../../../../../../usr/local/lib/cmake/Pangolin/PangolinTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Pangolin\"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/../../../../../usr/local/lib/cmake/Pangolin/PangolinTargets.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\Pangolin\"/>
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/../../../../../../usr/local/lib/cmake/Pangolin/PangolinTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Pangolin\"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/../../../../../usr/local/lib/cmake/gflags/gflags-config-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\gflags\"/>
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/../../../../../../usr/local/lib/cmake/gflags/gflags-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\gflags\"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/../../../../../usr/local/lib/cmake/gflags/gflags-config.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\gflags\"/>
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/../../../../../../usr/local/lib/cmake/gflags/gflags-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\gflags\"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/../../../../../usr/local/lib/cmake/gflags/gflags-nonamespace-targets-release.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\gflags\"/>
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/../../../../../../usr/local/lib/cmake/gflags/gflags-nonamespace-targets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\gflags\"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/../../../../../usr/local/lib/cmake/gflags/gflags-nonamespace-targets.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\gflags\"/>
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/../../../../../../usr/local/lib/cmake/gflags/gflags-nonamespace-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\gflags\"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/../../../../../usr/local/share/sophus/cmake/SophusConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\sophus\cmake\"/>
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/../../../../../../usr/local/share/sophus/cmake/SophusConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\share\sophus\cmake\"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/../../../../../usr/local/share/sophus/cmake/SophusConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\sophus\cmake\"/>
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/../../../../../../usr/local/share/sophus/cmake/SophusConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\share\sophus\cmake\"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/../../../../../usr/local/share/sophus/cmake/SophusTargets.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\sophus\cmake\"/>
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/../../../../../../usr/local/share/sophus/cmake/SophusTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\share\sophus\cmake\"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/cmake_modules/FindCSparse.cmake">
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/cmake_modules/FindCSparse.cmake">
 			<Option virtualFolder="CMake Files\cmake_modules\"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/cmake_modules/FindG2O.cmake">
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/cmake_modules/FindG2O.cmake">
 			<Option virtualFolder="CMake Files\cmake_modules\"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/cmake_modules/FindGlog.cmake">
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/cmake_modules/FindGlog.cmake">
 			<Option virtualFolder="CMake Files\cmake_modules\"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/src/CMakeLists.txt">
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/test/CMakeLists.txt">
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/test/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\test\"/>
 		</Unit>
-		<Unit filename="/home/kevin/workSpace/slambook2-master/ch13/app/CMakeLists.txt">
+		<Unit filename="/home/kevin/Documents/Github/kVisons/kslam/app/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\app\"/>
 		</Unit>
 	</Project>

@@ -60,11 +60,18 @@ void Viewer::ThreadLoop() {
         if (current_frame_) {
             DrawFrame(current_frame_, green);
             FollowCurrentFrame(vis_camera);
+            std::cout<<current_frame_->pose_.matrix()<<std::endl;
+
+//            std::fstream outfile;
+//            outfile.open("/home/kevin/data.txt", std::ios::out| std::ios::app);
+//            outfile<<current_frame_->pose_.matrix();
+//            outfile.close();
 
             cv::Mat img = PlotFrameImage();
             cv::imshow("image", img);
             cv::waitKey(1);
         }
+
 
         if (map_) {
             DrawMapPoints();

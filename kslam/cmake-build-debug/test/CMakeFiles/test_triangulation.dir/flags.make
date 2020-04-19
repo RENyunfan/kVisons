@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++11 -Wall -std=c++11 -O3 -fopenmp -pthread
 
 CXX_DEFINES = -DGFLAGS_IS_A_DLL=0
 
-CXX_INCLUDES = -I/usr/include/suitesparse -I/home/kevin/workSpace/slambook2-master/ch13/include -isystem /usr/include/eigen3 -isystem /opt/ros/kinetic/include/opencv-3.3.1-dev -isystem /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv 
+CXX_INCLUDES = -I/usr/include/suitesparse -I/home/kevin/Documents/Github/kVisons/kslam/include -isystem /usr/include/eigen3 -isystem /opt/ros/kinetic/include/opencv-3.3.1-dev -isystem /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv 
 
