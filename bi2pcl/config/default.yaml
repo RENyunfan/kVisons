@@ -1,0 +1,16 @@
+%YAML:1.0
+
+# camera intrinsic and extrinsics
+camera.fx: 458.654
+camera.fy: 457.296
+camera.cx: 367.215
+camera.cy: 248.375
+camera.d: 1
+# image resize ratio
+#	A smaller number may speed up this algorithm,
+#	but make it less accurate.
+image.zoom: 0.8
+
+# Topic to read
+topic_name.left: /camera/left/image_raw
+topic_name.right: /camera/right/image_raw

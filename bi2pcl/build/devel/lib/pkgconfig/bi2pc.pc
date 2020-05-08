@@ -1,8 +1,0 @@
-prefix=/home/kevin/Documents/Github/kVisons/bi2pcl/build/devel
-
-Name: bi2pc
-Description: Description of bi2pc
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

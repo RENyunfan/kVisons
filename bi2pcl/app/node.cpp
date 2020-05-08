@@ -3,7 +3,6 @@
 //
 #include "bino/bino_toolbox.h"
 #include "bino/config.h"
-#include <gflags/gflags.h>
 
 using namespace std;
 using namespace Eigen;
@@ -14,35 +13,30 @@ std::string config_file = "/home/kevin/Documents/Github/kVisons/bi2pcl/config/de
 
 int main(int argc, char **argv) {
 
-    google::InitGoogleLogging(argv[0]);
+    ros::init(argc, argv, "bi2pc");
     kbino::Bi2PC b2p(config_file);
-
-    ros::init(argc, argv, "bi");
     kbino::BiRosInterface node;
 
-    // 读取图像
     while(!ros::isShuttingDown()){
-
+        // Start clock
         start = clock();
 
         cv::Mat left = node.getLeft();
         cv::Mat right = node.getRight();
         if(left.empty()||right.empty()){
-            continue;
+            ros::spinOnce();
         }
+
         else{
             b2p.bi2pc(left,right);
-//            Draw point cloud
-//            node.imagePublish(b2p.getDis());
-//            pcl::visualization::CloudViewer viewer("Cloud Viewer");
-//            viewer.showCloud(cloud);
+//            node.PcPublish(b2p.getPointCloud());
+            node.imagePublish(b2p.getDis());
+
             en= clock();   //结束时间
             cout<<"Freq = "<<CLOCKS_PER_SEC/(double)(en-start)<<"Hz"<<endl;
         }
-
         ros::spinOnce();
     }
-
     return 0;
 }
 

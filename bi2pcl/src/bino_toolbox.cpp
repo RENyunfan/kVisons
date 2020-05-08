@@ -3,46 +3,66 @@
 //
 
 #include "bino/bino_toolbox.h"
+#include "bino/config.h"
 
 
-void kbino::Bi2PC::bi2pc(cv::Mat left, cv::Mat right,pcl::PointCloud<pcl::PointXYZ>::Ptr output) {\
 
-    if(!has_init){
-    LOG(ERROR)<<"The camera parameter was not initialized, shutting down...";
-    exit(0);
+
+kbino::Bi2PC::Bi2PC(const std::string path) {
+        // read from config file
+        if (Config::SetParameterFile(path) == false) {
+            std::cout<<"Config file error!"<<std::endl;
+        }
+
+        fx_ = kbino::Config::Get<double>("camera.fx");
+        fy_ = kbino::Config::Get<double>("camera.fy");
+        cx_ = kbino::Config::Get<double>("camera.cx");
+        cy_ = kbino::Config::Get<double>("camera.cy");
+        b_ =  kbino::Config::Get<double>("camera.d");
+        zoom_ = kbino::Config::Get<double>("image.zoom");
+        std::cout<<"Read config file success!"<<std::endl;
+        std::cout<<"fx_ = "<<fx_<<std::endl;
+        std::cout<<"fy_ = "<<fy_<<std::endl;
+        std::cout<<"cx_ = "<<cx_<<std::endl;
+        std::cout<<"cy_ = "<<cy_<<std::endl;
+        std::cout<<"b_ = "<<b_<<std::endl;
+        std::cout<<"zoom_ = "<<zoom_<<std::endl;
 }
+pcl::PointCloud<pcl::PointXYZI>::Ptr kbino::Bi2PC::getPointCloud(){
+    return cloud;
+};
+void kbino::Bi2PC::bi2pc(cv::Mat left, cv::Mat right) {
+
+    if(zoom_ != 1){
+        cv::resize(left,left,cv::Size(left.cols*zoom_,left.rows*zoom_));
+        cv::resize(right,right,cv::Size(right.cols*zoom_,right.rows*zoom_));
+    }
     left_ = left;
     right_ = right;
-    cv::Mat disparity_sgbm;
     cv::Ptr<cv::StereoSGBM> sgbm = cv::StereoSGBM::create(
             0, 96, 9, 8 * 9 * 9, 32 * 9 * 9, 1, 63, 10, 100, 32);    // 神奇的参数
+    cv::Mat disparity_sgbm;
     sgbm->compute(left, right, disparity_sgbm);
     disparity_sgbm.convertTo(disparity_, CV_32F, 1.0 / 16.0f);
 
+    pcl::PointCloud<pcl::PointXYZI>::Ptr out (new pcl::PointCloud<pcl::PointXYZI>);
     for (int v = 0; v < left.rows; v++)
         for (int u = 0; u < left.cols; u++) {
             if (disparity_.at<float>(v, u) <= 0.0 || disparity_.at<float>(v, u) >= 96.0) continue;
-
             double x = (u - cx_) / fx_;
         double y = (v - cy_) / fy_;
         double depth = fx_ * b_ / (disparity_.at<float>(v, u));
-        pcl::PointXYZ point ;
+        pcl::PointXYZI point ;
         point.x = x * depth;;
         point.y = y * depth;
         point.z = depth;
-        output->push_back(point);
+        point.intensity = left.at<uchar>(v, u) / 255.0;
+        out->push_back(point);
     }
-
+    cloud = out;
 }
 
-void kbino::Bi2PC::init(double fx, double fy, double cx, double cy, double b){
-    fx_ = fx;
-    fy_ = fy;
-    cx_ = cx;
-    cy_ = cy;
-    b_ = b;
-    has_init = true;
-}
+
 void kbino::Bi2PC::showInPango(){
     // 生成点云
     std::vector<Eigen::Vector4d, Eigen::aligned_allocator<Eigen::Vector4d>> pointcloud;
@@ -102,4 +122,6 @@ void kbino::Bi2PC::showInPango(){
     }
     return;
 }
+
+
 
